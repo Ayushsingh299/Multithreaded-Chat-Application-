@@ -1,0 +1,31 @@
+package com.chat;
+
+import com.chat.dao.UserDAO;
+import com.chat.model.User;
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class UserDAOTest {
+    
+    @Test
+    public void testUserRegistration() {
+        UserDAO userDAO = new UserDAO();
+        User user = new User();
+        user.setUsername("testuser" + System.currentTimeMillis());
+        user.setPasswordHash("test123");
+        user.setEmail("test@test.com");
+        user.setFullName("Test User");
+        
+        boolean result = userDAO.registerUser(user);
+        assertTrue("User registration should succeed", result);
+    }
+    
+    @Test
+    public void testUserLogin() {
+        UserDAO userDAO = new UserDAO();
+        User user = userDAO.login("admin", "admin123");
+        
+        assertNotNull("User should be found", user);
+        assertEquals("Username should match", "admin", user.getUsername());
+    }
+}
