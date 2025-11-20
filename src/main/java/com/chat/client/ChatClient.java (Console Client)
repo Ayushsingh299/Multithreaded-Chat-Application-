@@ -1,0 +1,82 @@
+package com.chat.client;
+
+import java.io.*;
+import java.net.Socket;
+import java.util.Scanner;
+
+public class ChatClient {
+    private static final String SERVER_HOST = "localhost";
+    private static final int SERVER_PORT = 9999;
+    
+    private Socket socket;
+    private BufferedReader in;
+    private PrintWriter out;
+    private Scanner scanner;
+
+    public ChatClient() {
+        scanner = new Scanner(System.in);
+    }
+
+    public void start() {
+        try {
+            socket = new Socket(SERVER_HOST, SERVER_PORT);
+            in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            out = new PrintWriter(socket.getOutputStream(), true);
+            
+            System.out.println("✓ Connected to chat server");
+            
+            // Start thread to receive messages
+            new Thread(new MessageReceiver()).start();
+            
+            // Send messages
+            String message;
+            while (true) {
+                message = scanner.nextLine();
+                if (message.equals("/quit")) {
+                    break;
+                }
+                out.println(message);
+            }
+            
+        } catch (IOException e) {
+            System.err.println("Connection error: " + e.getMessage());
+        } finally {
+            cleanup();
+        }
+    }
+
+    private void cleanup() {
+        try {
+            if (scanner != null) scanner.close();
+            if (in != null) in.close();
+            if (out != null) out.close();
+            if (socket != null) socket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    class MessageReceiver implements Runnable {
+        @Override
+        public void run() {
+            try {
+                String message;
+                while ((message = in.readLine()) != null) {
+                    System.out.println(message);
+                }
+            } catch (IOException e) {
+                System.out.println("Disconnected from server");
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println("╔════════════════════════════════╗");
+        System.out.println("║   CHAT CLIENT - CONSOLE MODE  ║");
+        System.out.println("╚════════════════════════════════╝");
+        System.out.println();
+        
+        ChatClient client = new ChatClient();
+        client.start();
+    }
+}
