@@ -87,92 +87,16 @@ Built as a comprehensive demonstration of Java enterprise application developmen
 ---
 
 ## 🏗️ System Architecture
-┌─────────────────────────────────────────────────┐
-│ CLIENT LAYER │
-│ ┌──────────────┐ ┌──────────────┐ │
-│ │ Web Browser │ │Console Client│ │
-│ │ (JSP/HTML) │ │ (Java) │ │
-│ └──────────────┘ └──────────────┘ │
-└─────────────────────────────────────────────────┘
-│ │
-▼ ▼
-┌─────────────────────────────────────────────────┐
-│ WEB/APPLICATION LAYER │
-│ ┌──────────────────────────────────────────┐ │
-│ │ Servlets (Login, Register, Logout) │ │
-│ │ ChatServer (Socket Server) │ │
-│ │ ClientHandler (Thread Pool Workers) │ │
-│ │ Session Management │ │
-│ └──────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────┘
-│
-▼
-┌─────────────────────────────────────────────────┐
-│ DATA ACCESS LAYER │
-│ ┌──────────────────────────────────────────┐ │
-│ │ UserDAO, MessageDAO │ │
-│ │ ConnectionPool │ │
-│ │ Model Classes (User, Message) │ │
-│ └──────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────┘
-│
-▼
-┌─────────────────────────────────────────────────┐
-│ DATABASE LAYER │
-│ MySQL Database (chatapp) │
-│ Tables: users, messages │
-└─────────────────────────────────────────────────┘
-
+<img width="525" height="520" alt="image" src="https://github.com/user-attachments/assets/0d2f0528-c507-4e42-a7c6-7025eded22f8" />
 
 ## 📂 Project Structure
-Multithreaded-Chat-Application/
-│
-├── src/
-│ ├── main/
-│ │ ├── java/com/chat/
-│ │ │ ├── server/
-│ │ │ │ └── ChatServer.java # Socket server with thread pool
-│ │ │ ├── client/
-│ │ │ │ └── ChatClient.java # Console-based chat client
-│ │ │ ├── dao/
-│ │ │ │ ├── ConnectionPool.java # JDBC connection management
-│ │ │ │ ├── UserDAO.java # User database operations
-│ │ │ │ └── MessageDAO.java # Message database operations
-│ │ │ ├── model/
-│ │ │ │ ├── User.java # User entity class
-│ │ │ │ └── Message.java # Message entity class
-│ │ │ └── servlet/
-│ │ │ ├── LoginServlet.java # Login request handler
-│ │ │ ├── RegisterServlet.java # Registration handler
-│ │ │ └── LogoutServlet.java # Logout handler
-│ │ │
-│ │ └── webapp/
-│ │ ├── WEB-INF/
-│ │ │ └── web.xml # Servlet configuration
-│ │ ├── jsp/
-│ │ │ ├── login.jsp # Login page
-│ │ │ ├── register.jsp # Registration page
-│ │ │ └── chat.jsp # Chat interface
-│ │ └── assets/
-│ │ ├── css/
-│ │ │ └── styles.css # Application styling
-│ │ └── js/
-│ │ └── script.js # Theme toggle logic
-│ │
-│ └── test/
-│ └── java/com/chat/
-│ └── UserDAOTest.java # JUnit test cases
-│
-├── database/
-│ └── schema.sql # Database schema & sample data
-│
-├── docs/
-│ └── screenshots/ # Application screenshots
-│
-├── .gitignore # Git ignore rules
-├── pom.xml # Maven configuration
-├── README.md # This file
-└── LICENSE # MIT License
+
+<img width="631" height="604" alt="image" src="https://github.com/user-attachments/assets/f0ae58cb-108b-4059-be17-c8f70ef0b114" />
+<img width="635" height="511" alt="image" src="https://github.com/user-attachments/assets/1da8bd98-7664-4d50-813b-bb3bc0323ce5" />
+<img width="629" height="309" alt="image" src="https://github.com/user-attachments/assets/11fd0d80-d485-4286-b752-95fac47feca7" />
+
+
+
 ## 🚀 Setup Instructions
 
 ### Prerequisites
