@@ -442,7 +442,7 @@ This project was developed as part of a collaborative team effort for academic c
     </td>
     <td align="center">
       <a href="https://share.google.com/ldIsoa7yGXxz8CZHl">
-        <img src="https://github.com/Rehan-Chaudhary" width="100px;" alt="Rehan Chaudhary"/>
+        <img src="https://github.com/Rehan-Chaudhary.png" width="100px;" alt="Rehan Chaudhary"/>
         <br />
         <sub><b>Rehan Chaudhary</b></sub>
       </a>
