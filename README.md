@@ -441,7 +441,7 @@ This project was developed as part of a collaborative team effort for academic c
       <sub>🌐 JSP/Servlets | 📱 Responsive UI | 🎨 HTML/CSS</sub>
     </td>
     <td align="center">
-      <a href="https://share.google.com/ldIsoa7yGXxz8CZHl">
+      <a href="https://github.com/Rehan-Chaudhary">
         <img src="https://github.com/Rehan-Chaudhary.png" width="100px;" alt="Rehan Chaudhary"/>
         <br />
         <sub><b>Rehan Chaudhary</b></sub>
