@@ -106,17 +106,11 @@ Ensure you have the following installed:
 - **Java JDK 11+**
 java -version
 
-text
-
 - **Apache Maven 3.6+**
 mvn -version
 
-text
-
 - **MySQL Server 8.0+**
 mysql --version
-
-text
 
 - **Apache Tomcat 9.0+**
 
@@ -127,8 +121,6 @@ text
 git clone https://github.com/Ayushsingh299/Multithreaded-Chat-Application.git
 cd Multithreaded-Chat-Application
 
-text
-
 #### 2️⃣ Setup MySQL Database
 
 Login to MySQL
@@ -137,14 +129,10 @@ mysql -u root -p
 Create database and tables
 source database/schema.sql
 
-text
-
 Or manually:
 CREATE DATABASE chatapp;
 USE chatapp;
 -- Paste contents of schema.sql
-
-text
 
 #### 3️⃣ Configure Database Connection
 
@@ -154,13 +142,9 @@ private static final String DB_URL = "jdbc:mysql://localhost:3306/chatapp";
 private static final String DB_USER = "root";
 private static final String DB_PASSWORD = "YOUR_PASSWORD_HERE"; // ⬅️ Change this!
 
-text
-
 #### 4️⃣ Build the Project
 
 mvn clean install
-
-text
 
 This will:
 - ✅ Compile all Java files
@@ -172,8 +156,6 @@ This will:
 
 **Option A: Manual**
 cp target/multithreaded-chat-application.war $CATALINA_HOME/webapps/
-
-text
 
 **Option B: Tomcat Manager**
 - Go to `http://localhost:8080/manager`
@@ -187,8 +169,6 @@ $CATALINA_HOME/bin/startup.sh
 Windows
 %CATALINA_HOME%\bin\startup.bat
 
-text
-
 ---
 
 ## 🎮 Running the Application
@@ -197,8 +177,6 @@ text
 
 1. **Open browser and navigate to:**
 http://localhost:8080/multithreaded-chat-application/
-
-text
 
 2. **Login with sample credentials:**
 - Username: `admin` | Password: `admin123`
@@ -214,20 +192,14 @@ cd target/classes
 Start socket server
 java com.chat.server.ChatServer
 
-text
-
 **Expected output:**
 ✓ Chat Server started on port 9999
 ✓ Waiting for connections...
-
-text
 
 ### Console Client (Optional)
 
 In another terminal
 java com.chat.client.ChatClient
-
-text
 
 **Commands:**
 - Type any message to broadcast to all
@@ -293,7 +265,6 @@ INDEX idx_username (username),
 INDEX idx_email (email)
 ) ENGINE=InnoDB;
 
-text
 
 ### Messages Table
 
@@ -308,23 +279,9 @@ INDEX idx_sender (sender_id),
 INDEX idx_sent_at (sent_at)
 ) ENGINE=InnoDB;
 
-text
-
 ### Entity Relationship Diagram
+<img width="551" height="351" alt="image" src="https://github.com/user-attachments/assets/1040783e-4681-4f10-b63c-c31a4ea89071" />
 
-┌──────────────┐ ┌──────────────┐
-│ users │ │ messages │
-├──────────────┤ ├──────────────┤
-│ user_id (PK) │◄─────────┤ message_id │
-│ username │ 1:N │ sender_id(FK)│
-│ password_hash│ │ recipient_id │
-│ email │ │ content │
-│ full_name │ │ sent_at │
-│ is_online │ └──────────────┘
-│ created_at │
-└──────────────┘
-
----
 
 ## 📡 API Documentation
 
@@ -387,13 +344,17 @@ This project was developed as part of a collaborative team effort for academic c
 | **Rehan Chaudhary** | CSS styling, dark/light theme, UI components, user experience design, documentation, testing | CSS3, JavaScript, UI/UX Design |
 
 ### Language Distribution
-ava ████████████████████░░ 40% (Server, DAO, Models, Servlets)
-JSP/HTML ██████████░░░░░░░░░░░ 25% (Web pages, Templates)
-CSS ██████░░░░░░░░░░░░░░░ 15% (Styling, Themes)
-JavaScript ██████░░░░░░░░░░░░░░░ 15% (Client-side logic)
-SQL ██░░░░░░░░░░░░░░░░░░░ 5% (Database queries)
+Java         ████████████████████░░ 40%  (Server, DAO, Models, Servlets)
 
----
+JSP/HTML     ██████████░░░░░░░░░░░ 25%  (Web pages, UI templates)
+
+CSS          ██████░░░░░░░░░░░░░░ 15%  (Styling, Layout, Themes)
+
+JavaScript   ██████░░░░░░░░░░░░░░ 15%  (Client-side logic, UI actions)
+
+SQL          ██░░░░░░░░░░░░░░░░░  5%   (Database operations)
+
+
 
 ## 🚀 Future Enhancements
 
@@ -467,7 +428,7 @@ SOFTWARE.
 
 - **Ayush Singh** - [@Ayushsingh299](https://github.com/Ayushsingh299)
 - **Aayush Gaira** - [@Aayush-Gaira](https://github.com/Aayush-Gaira)
-- **Rehan Chaudhary** - [Profile](https://share.google.com/ldIsoa7yGXxz8CZHl)
+- **Rehan Chaudhary** - [@Rehan-Chaudhary](https://github.com/Rehan-Chaudhary)
 
 ---
 
