@@ -9,23 +9,45 @@ A Java-based client-server chat system built using Sockets and Threads, where mu
 
 ---
 
-## 📋 Table of Contents
+## 📑 Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [System Architecture](#system-architecture)
-- [Project Structure](#project-structure)
-- [Setup Instructions](#setup-instructions)
-- [Running the Application](#running-the-application)
-- [Usage Guide](#usage-guide)
-- [Database Schema](#database-schema)
-- [API Documentation](#api-documentation)
-- [Testing](#testing)
-- [Screenshots](#screenshots)
-- [Contributors](#contributors)
-- [Future Enhancements](#future-enhancements)
-- [License](#license)
+**1. [🎯 Overview](#-overview)**
+
+**2. [📸 Screenshot](#-screenshots)**
+
+**3. [✨ Features](#-features)**
+
+**4. [🛠️ Technologies Used](#️-technologies-used)**
+
+**5. [🏗️ System Architecture](#️-system-architecture)**
+
+**6. [📂 Project Structure](#-project-structure)**
+
+**7. [🚀 Setup Instructions](#-setup-instructions)**
+
+**8. [🎮 Running the Application](#-running-the-application)**
+
+**9. [📖 Usage Guide](#-usage-guide)**
+
+**10. [🗄️ Database Schema](#️-database-schema)**
+
+**11. [📡 API Documentation](#-api-documentation)**
+
+**12. [👥 Contributors](#-contributors)**
+
+**13. [🚀 Future Enhancements](#-future-enhancements)**
+
+**14. [📄 License](#-license)**
+
+**15. [📞 Contact & Support](#-contact--support)**
+
+**16. [🎓 Academic Context](#-academic-context)**
+
+**17. [🏆 Conclusion](#-conclusion)**
+
+**18. [🙏 Acknowledgments](#-acknowledgments)**
+
+**19. [📚 References & Resources](#-references--resources)**
 
 ---
 
@@ -42,6 +64,20 @@ The **Multithreaded Chat Application** is a scalable, full-stack Java web applic
 Built as a comprehensive demonstration of Java enterprise application development, this project is ideal for academic portfolios, coding assessments, and real-world deployment scenarios.
 
 ---
+
+## 📸 Screenshot
+
+### Registration Page
+
+![WhatsApp Image 2025-11-22 at 11 51 48_0b6983a3](https://github.com/user-attachments/assets/7c4c135f-23fe-42c0-a193-019d51ed5738)
+
+### Login Page 
+
+![WhatsApp Image 2025-11-22 at 11 45 28_40188ca5](https://github.com/user-attachments/assets/5b7132e0-0edd-4f69-aba3-2209a9fefc60)
+
+### Chat Room
+
+![WhatsApp Image 2025-11-22 at 11 45 28_d8f3f2cb](https://github.com/user-attachments/assets/aca9cf45-cb9b-4b80-94d1-0e6a3ba46ed6)
 
 ## ✨ Features
 
@@ -178,7 +214,10 @@ Windows
 1. **Open browser and navigate to:**
 http://localhost:8080/multithreaded-chat-application/
 
-2. **Login with sample credentials:**
+### OR Use Online QR Code (Direct Link)
+![WhatsApp Image 2025-11-21 at 21 44 07_db3bc96e](https://github.com/user-attachments/assets/294d3410-d25f-4f76-950b-696ee5d55f20)
+
+3. **Login with sample credentials:**
 - Username: `admin` | Password: `admin123`
 - Username: `demo` | Password: `demo123`
 
@@ -555,9 +594,8 @@ Special thanks to:
 
 **Made with ☕ and 💻 by CS Students**
 
-[Report Bug](https://github.com/Ayushsingh299/Multithreaded-Chat-Application/issues) · 
-[Request Feature](https://github.com/Ayushsingh299/Multithreaded-Chat-Application/issues) · 
-[View Demo](#)
+.[Report Bug](https://github.com/Ayushsingh299/Multithreaded-Chat-Application/issues) · 
+[Request Feature](https://github.com/Ayushsingh299/Multithreaded-Chat-Application/issues) 
 
 **© 2025 Multithreaded Chat Application. All Rights Reserved.**
 
